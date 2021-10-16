@@ -16,7 +16,7 @@ const disconnected = process.env.JSS_MODE === JSS_MODE_DISCONNECTED;
   that the app can import and use.
 */
 const port = process.env.PORT || 3000;
-const configOverride = disconnected ? { sitecoreApiHost: `http://a108-2a01-cb00-642-f100-f4f4-d758-4ae5-75df.ngrok.io` } : undefined;
+const configOverride = disconnected ? { sitecoreApiHost: `http://a108-2a01-cb00-642-f100-f4f4-d758-4ae5-75df.ngrok.io:${port}` } : undefined;
 
 generateConfig(configOverride);
 
